@@ -22,6 +22,8 @@ make
 
 ```./contourboxplot test 21 258 test 185 129```
 
+This command with generate an SVG file in test direcotry called "CBP.svg" and also "analysis_CBD.txt" file in the build directory that summarizes the data depth values and ordering of the ensemble members (from highest depth to lowest).
+
 If you run the code with no parameters there are more details about assumptions in this code that might need to be changed.
 
 ```
