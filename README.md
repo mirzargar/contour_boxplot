@@ -10,15 +10,19 @@ ITK4.8+
 ```
 ## Building
 ```
-cd contour_boxplot
-mkdir build
-cd build
+cd contour_boxplot/build
 cmake ../src/ or cmake ../src/ -DITK_DIR=<ITK build directory> 
 make
 ```
 
 ## Running
-* Note that this code is the original version (not necessary fast or memory optimized). The SVG generator is also tuned for [SREF ensemble](http://www.nco.ncep.noaa.gov/pmb/products/sref/).
+* Note that this code is the original version (not necessary fast or memory efficient). The SVG generator is also tuned for [SREF ensemble](http://www.nco.ncep.noaa.gov/pmb/products/sref/).
+
+* Data for a test run has been provided in the build folder. To run the test example, aftering building successfully try:
+
+```./contourboxplot test 21 258 test 185 129```
+
+This command with generate an SVG file in test direcotry called "CBP.svg" and also "analysis_CBD.txt" file in the build directory that summarizes the data depth values and ordering of the ensemble members (from highest depth to lowest).
 
 If you run the code with no parameters there are more details about assumptions in this code that might need to be changed.
 
@@ -27,7 +31,7 @@ If you run the code with no parameters there are more details about assumptions 
 ```
 
 Note:
-* files are considered to be linearized - if change needed consult function ```LoadFieldFileWithoutCoord``` in EnsembleHandler.cpp
-* the files should be named as mem_c_0 to mem_c_ens_size - if change needed consult ```LoadFieldEnsemble``` in EnsembleHandler.cpp
-* the value of j has been hard coded in the main file (```j=2```) - it also has been hard coded partially in ```getTimePercents``` function in CBD.cpp
-* the outlier num is specified as the number of members with zero depth value. If every member has a non-zero depth value then it has been 
+* Files are considered to be linearized - if change needed consult function ```LoadFieldFileWithoutCoord``` in EnsembleHandler.cpp.
+* The files should be named as mem_c_0 to mem_c_ens_size - if change needed consult ```LoadFieldEnsemble``` in EnsembleHandler.cpp.
+* The value of j has been hard coded in the main file (```j=2```) - it also has been hard coded partially in ```getTimePercents``` function in CBD.cpp.
+* The outlier num is specified as the number of members with zero depth value. If every member has a non-zero depth value then it has been.
