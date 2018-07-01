@@ -1,6 +1,6 @@
-# contour_boxplot
+# Contour Boxplot
 
-Computing the contour boxplot for an ensmeble of 2D isocontours. This code has been tuned for [SREF ensemble dataset (text file format)](http://www.nco.ncep.noaa.gov/pmb/products/sref/). For more details regarding the contour boxplot which is a nonparamteric technique to summarize the main features of an ensmeble of isocontour consult the [curve boxplot paper](http://www.cs.miami.edu/home/mirzargar/papers/contour_boxplot.pdf) or its [wiki page](https://en.wikipedia.org/wiki/Contour_boxplot).
+Computing the contour boxplot for an ensmeble of 2D isocontours. This code has been tuned for [SREF ensemble dataset (text file format)](http://www.nco.ncep.noaa.gov/pmb/products/sref/). For more details regarding the contour boxplot which is a nonparamteric technique to summarize the main features of an ensmeble of isocontour consult the [contour boxplot paper](http://www.cs.miami.edu/home/mirzargar/papers/contour_boxplot.pdf) or its [wiki page](https://en.wikipedia.org/wiki/Contour_boxplot).
 
 ## Requirements
 ```
@@ -10,10 +10,10 @@ ITK4.8+
 ```
 ## Building
 ```
-cd curve_boxplot
+cd contourboxplot
 mkdir build
 cd build
-cmake ../src/ or cmake ../src/ -DVTK_DIR=<VTK build directory> - DCGAL_DIR=<CGAL build directory>
+cmake ../src/ or cmake ../src/ -DITK_DIR=<ITK build directory> 
 make
 ```
 
