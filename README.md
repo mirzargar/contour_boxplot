@@ -10,7 +10,7 @@ ITK4.8+
 ```
 ## Building
 ```
-cd contourboxplot
+cd contour_boxplot
 mkdir build
 cd build
 cmake ../src/ or cmake ../src/ -DITK_DIR=<ITK build directory> 
