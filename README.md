@@ -27,7 +27,7 @@ If you run the code with no parameters there are more details about assumptions 
 ```
 
 Note:
-* files are considered to be linearized - if change needed consult function LoadFieldFileWithoutCoord in EnsembleHandler
-* the files should be named as mem_c_0 to mem_c_ens_size - if change needed consult LoadFieldEnsemble in EnsembleHandler
-* the value of j has been hard coded in the main file (j=2) - it also has been hard coded partially in getTimePercents function in CBD
+* files are considered to be linearized - if change needed consult function ```LoadFieldFileWithoutCoord``` in EnsembleHandler.cpp
+* the files should be named as mem_c_0 to mem_c_ens_size - if change needed consult ```LoadFieldEnsemble``` in EnsembleHandler.cpp
+* the value of j has been hard coded in the main file (```j=2```) - it also has been hard coded partially in ```getTimePercents``` function in CBD.cpp
 * the outlier num is specified as the number of members with zero depth value. If every member has a non-zero depth value then it has been 
