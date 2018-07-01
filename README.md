@@ -16,9 +16,11 @@ make
 ```
 
 ## Running
-* Note that this code is the original version (not necessary fast or memory optimized). The SVG generator is also tuned for [SREF ensemble](http://www.nco.ncep.noaa.gov/pmb/products/sref/).
+* Note that this code is the original version (not necessary fast or memory efficient). The SVG generator is also tuned for [SREF ensemble](http://www.nco.ncep.noaa.gov/pmb/products/sref/).
 
-* data for a test run has been provided in the build folder.
+* Data for a test run has been provided in the build folder. To run the test example, aftering building successfully try:
+
+```./contourboxplot test 21 258 test 185 129```
 
 If you run the code with no parameters there are more details about assumptions in this code that might need to be changed.
 
